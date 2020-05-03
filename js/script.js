@@ -40,5 +40,11 @@ $(document).ready(function(){
      $("#willshow-paragraph").toggle();
      $("p#bolddesign-dev").css("font-weight","bold");
  });
+ $(".contact-us").submit(function(event){
+var inputtedName=$("#name").val();
+var inputedEmail=$("#email").val();
+alert("hey" + inputtedName + "we have recieved your message.Thank you for reaching out to us.")
+     event.preventdefault();
+ });
 });
 
